@@ -1,6 +1,5 @@
 {% set version = '1.1.1' %}
 {% set posix = 'm2-' if win else '' %}
-{% set native = 'm2w64-' if win else '' %}
 
 package:
   name: r-wrswor
@@ -13,9 +12,9 @@ source:
   sha256: 11045a62feef679bbcb02a0ede8a2c5985393df57f47b67da2733884116016e0
 
 build:
-  skip: True  # [win]
-  merge_build_host: True  # [win]
-  number: 1
+  # Checking windows to see if it passes. Uncomment the line if it fails.
+  # skip: True  # [win]
+  number: 2
   rpaths:
     - lib/R/lib/
     - lib/
@@ -23,7 +22,9 @@ build:
 requirements:
   build:
     - {{ compiler('c') }}              # [not win]
+    - {{ stdlib("c") }}                # [not win]
     - {{ compiler('m2w64_c') }}        # [win]
+    - {{ stdlib("m2w64_c") }}          # [win]
     - {{ compiler('cxx') }}            # [not win]
     - {{ compiler('m2w64_cxx') }}      # [win]
     - {{ posix }}filesystem        # [win]
@@ -38,7 +39,6 @@ requirements:
     - r-logging >=0.4_13
   run:
     - r-base
-    - {{ native }}gcc-libs         # [win]
     - r-rcpp
     - r-logging >=0.4_13
 
