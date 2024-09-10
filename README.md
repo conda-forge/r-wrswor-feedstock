@@ -7,20 +7,28 @@ Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-wrswor-feedst
 About r-wrswor
 --------------
 
-Home: http://krlmlr.github.io/wrswoR
+Home: https://krlmlr.github.io/wrswoR/
 
 Package license: GPL-3.0-only
 
 Summary: A collection of implementations of classical and novel algorithms for weighted sampling without replacement.
+
+Development: https://github.com/krlmlr/wrswoR/
+
+Documentation: https://krlmlr.github.io/wrswoR/reference/index.html
 
 About r-wrswor
 --------------
 
-Home: http://krlmlr.github.io/wrswoR
+Home: https://krlmlr.github.io/wrswoR/
 
 Package license: GPL-3.0-only
 
 Summary: A collection of implementations of classical and novel algorithms for weighted sampling without replacement.
+
+Development: https://github.com/krlmlr/wrswoR/
+
+Documentation: https://krlmlr.github.io/wrswoR/reference/index.html
 
 Current build status
 ====================
