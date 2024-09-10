@@ -39,7 +39,7 @@ requirements:
     - {{ posix }}zip               # [win]
   host:
     - r-base
-    - r-rcpp >= 0.11.5
+    - r-rcpp >=0.11.5
     - r-logging >=0.4_13
   run:
     - r-base
