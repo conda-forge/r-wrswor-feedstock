@@ -1,4 +1,4 @@
-{% set version = '1.1.1' %}
+{% set version = "1.2.0" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,10 +9,10 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/wrswoR_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/wrswoR/wrswoR_{{ version }}.tar.gz
-  sha256: 11045a62feef679bbcb02a0ede8a2c5985393df57f47b67da2733884116016e0
+  sha256: 611a8112dd013c908bec828a478e7b38b017b18ffbdd46dba11bcc78fd5d1439
 
 build:
-  number: 3
+  number: 0
   rpaths:
     - lib/R/lib/
     - lib/
@@ -56,8 +56,7 @@ about:
   dev_url: https://github.com/krlmlr/wrswoR/
   doc_url: https://krlmlr.github.io/wrswoR/reference/index.html
   license: GPL-3.0-only
-  summary: A collection of implementations of classical and novel algorithms for weighted sampling
-    without replacement.
+  summary: A collection of implementations of classical and novel algorithms for weighted sampling without replacement.
   license_family: GPL3
   license_file:
     - {{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3
