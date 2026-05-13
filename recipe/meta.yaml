@@ -1,4 +1,4 @@
-{% set version = "1.2.0" %}
+{% set version = "1.2.1" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,7 +9,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/wrswoR_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/wrswoR/wrswoR_{{ version }}.tar.gz
-  sha256: 611a8112dd013c908bec828a478e7b38b017b18ffbdd46dba11bcc78fd5d1439
+  sha256: 9a926a650a1257dae23566953789f650e7ea0234cb24d67a4713637635ddecf9
 
 build:
   number: 0
